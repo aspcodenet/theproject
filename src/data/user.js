@@ -2,26 +2,21 @@
 
 // publkic + private i C#
 
-function CreateUser(fullName, phone)  {
-    aaa()
-    var returnObj = {
-      fullName : fullName,
-      phone : phone,
-      contactInfo: 'Contact Info: ' + fullName + ' ' + phone
-    }
-    return returnObj
-  }
+function CreateUser(fullName, phone) {
+  aaa();
+  const returnObj = {
+    fullName,
+    phone,
+    contactInfo: `Contact Info: ${fullName} ${phone}`,
+  };
+  return returnObj;
+}
 
-  function aaa(){
+function aaa() {}
 
-  }
+const allUsers = [CreateUser("Stefan", "1"), CreateUser("Kalle", "222")];
 
- const allUsers = [
-    CreateUser("Stefan","1"),
-    CreateUser("Kalle","222")
-  ]
-
-export { CreateUser, allUsers  }
+export { CreateUser, allUsers };
 
 // export function CreateUser(fullName, phone)  {
 //     aaa()
@@ -37,11 +32,7 @@ export { CreateUser, allUsers  }
 
 //   }
 
-
 //   export const allUsers = [
 //     CreateUser("Stefan","1"),
 //     CreateUser("Kalle","222")
 //   ]
-
-
-  
